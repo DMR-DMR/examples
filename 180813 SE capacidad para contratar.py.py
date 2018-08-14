@@ -1,4 +1,5 @@
-# 180813 SE capacidad para contratar.py: Este es un ejemplo básico de un Sistema legal Experto desarrolado en modo IF Statement
+# 180813 SE capacidad para contratar.py:
+# Este es un ejemplo básico de un Sistema legal Experto desarrolado en modo IF Statement
 # El propósito de este archivo es de servir como guía para la comprensión de sistemas expertos basados en reglas.
 # Python 3.6.5
 # 18 de Agosto de 2018
@@ -30,7 +31,7 @@ __copyright__   = "GNU General Public License"
 
 #1. Banco de mensajes de bienvenida y preguntas
 
-Welcome = "\n \n    Bienvenido(a) a este ejemplo básico de un sistema experto legal.\n \n    Le haremos un par de preguntas. \n    En base a sus respuestas y a la legislación\n    chilena vigente, le diremos si usted tiene\n    capacidad legal para contratar. "
+Welcome = "\n \n    Bienvenido(a) a este ejemplo básico de un sistema experto legal.\n \n    El propósito de este programa es determinar si una persona determinada tiene capacidad para contratar."
 dotted_line = "    --------------------------------------------\n"
 line_break =" \n "
 
@@ -46,11 +47,12 @@ print (line_break)
 print(dotted_line)
 print (line_break)
 
-edad = int(input ("    PREGUNTAS:\n \n    EDAD:\n    ¿qué edad tiene usted? (escríba en números):   "))
+edad = int(input ("    PREGUNTAS:\n \n    EDAD:\n    ¿qué edad tiene la persona? (escríba en números):   "))
 
 print (line_break)
 
-sexo = input ("    SEXO:\n    ¿cual es su género? Escriba 1 si usted es mujer, 2 si usted es hombre:   ")
+sexo = input ("    SEXO:\n    Escriba 1 si la persona es mujer, 2 si es hombre:   ")
+
 
 print (line_break)
 print(dotted_line)
@@ -59,16 +61,16 @@ print (line_break)
 print ("    RESPUESTAS:\n\n")
 
 #2. Banco de respuestas posibles
-niña = "    Usted es una niña. No tiene capacidad para contratar. "
-niño = "    Usted es un niño. No tiene capacidad para contratar."
-na = "    Si usted contrata, dicho acto adolecerá de nulidad absoluta."
-NR = "    Si usted contrata sin la autorización de su representante legal, dicho acto adolecerá de nulidad relativa."
-varon_impuber = "    Usted es un varón impuber. No tiene capacidad para contratar"
-mujer_impuber ="    Usted es una mujer impuber. No tiene capacidad para contratar"
-representante_NA = "    Usted deberá actuar legalmente a través de su representante legal: \n    padre, madre, adoptante y su tutor o curador.\n"
-representante_NR = "    Usted deberá actuar representado o debidamente autorizado por su representante legal: \n    padre, madre, adoptante y su tutor o curador.\n"
-mayor_de_edad ="    Usted es mayor de edad y por lo tanto tiene PLENA capacidad para contratar."
-menor_de_edad ="    Usted es una persona menor de edad. Usted no puede contratar por si sólo."
+niña = "    La persona es una niña. No tiene capacidad para contratar. "
+niño = "    La persona es un niño. No tiene capacidad para contratar."
+na = "    Si la persona contrata, dicho acto adolecerá de nulidad absoluta."
+NR = "    Si la persona contrata sin la autorización de su representante legal, dicho acto adolecerá de nulidad relativa."
+varon_impuber = "    La persona es un varón impuber. No tiene capacidad para contratar"
+mujer_impuber ="    La persona es una mujer impuber. No tiene capacidad para contratar"
+representante_NA = "    La persona únicamente podrá  actuar legalmente a través de su representante legal: \n    padre, madre, adoptante y su tutor o curador.\n"
+representante_NR = "    La persona deberá actuar representada o debidamente autorizada por su representante legal: \n    padre, madre, adoptante y su tutor o curador.\n"
+mayor_de_edad ="    La persona es mayor de edad y por lo tanto tiene PLENA capacidad para contratar."
+menor_de_edad ="    La persona es menor de edad y no puede contratar sola."
 
 #3. Motor en base a IF statements
 
